@@ -18,7 +18,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <main className="min-h-screen">
+        <main className="min-h-screen bg-white">
+          <Link className="" href="/">
           <div className="">
             <Image
               src="/logo_final_BGP.jpg"
@@ -28,25 +29,26 @@ export default function RootLayout({
               className="fixed top-0 left-0 ml-8 mt-6 bg-purple-700 hover:scale-[1.02] transition-all"
             />
           </div>
-          <nav className="flex flex-row">
-            <div className="flex flex-row my-5 mx-auto gap-x-6">
-              <Link href="/about">
-                <div className="text-white">About</div>
+          </Link>
+          <nav className="fixed flex flex-row top-0 right-0 left-0">
+            <div className="flex flex-row my-5 mx-auto gap-x-14">
+              <Link href="/about" className="border-b-2 border-transparent hover:border-black transition-all duration-500">
+                <div className="text-black">About</div>
               </Link>
-              <Link href="/expertise">
-                <div className="text-white">Expertise</div>
+              <Link href="/expertise" className="border-b-2 border-transparent hover:border-black transition-all duration-500">
+                <div className="text-black">Expertise</div>
               </Link>
-              <Link href="/work">
-                <div className="text-white">Work</div>
+              <Link href="/work" className="border-b-2 border-transparent hover:border-black transition-all duration-500">
+                <div className="text-black">Work</div>
               </Link>
-              <Link href="/blogs">
-                <div className="text-white">Blogs</div>
+              <Link href="/blogs" className="border-b-2 border-transparent hover:border-black transition-all duration-500">
+                <div className="text-black">Blogs</div>
               </Link>
-              <Link href="/contact">
-                <div className="text-white">Contact</div>
+              <Link href="/contact" className="border-b-2 border-transparent hover:border-black transition-all duration-500">
+                <div className="text-black">Contact</div>
               </Link>
             </div>
-            <button className="bg-white text-base font-medium px-2 py-1  mr-5 my-3">
+            <button className="bg-black text-black text-base font-medium px-2 py-1  mr-5 my-3">
               Let's Talk
             </button>
           </nav>
