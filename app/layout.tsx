@@ -48,7 +48,7 @@ export default function RootLayout({
                 <div className="text-black">Contact</div>
               </Link>
             </div>
-            <button className="bg-black text-black text-base font-medium px-2 py-1  mr-5 my-3">
+            <button className="bg-black text-white text-base font-medium px-2 py-1  mr-5 my-3">
               Let's Talk
             </button>
           </nav>
