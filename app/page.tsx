@@ -20,9 +20,77 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="bg-white">
-        <div className="lg:ml-96">
-          <span className="text-4xl">Our expertise includes:</span>
+      <div className="bg-black">
+        <div className="text-white flex flex-col border-x mx-2 border-white min-h-screen pr-10">
+          <div className="lg:ml-96 flex flex-col mb-24">
+            <span className="text-5xl lg:mt-20 lg:mb-40">
+              Our expertise includes:
+            </span>
+            <div className="flex flex-row w-full gap-x-8 mt-14">
+              <span className="border-t pt-6 text-2xl w-full">
+                Brand Strategy
+              </span>
+              <span className="border-t pt-6 text-2xl w-full">
+                Innovation
+              </span>
+            </div>
+            <div className="flex flex-row w-full gap-x-8 mt-14">
+              <span className="border-t pt-6 text-2xl w-full">
+                Content Strategy
+              </span>
+              <span className="border-t pt-6 text-2xl w-full">
+                Technology
+              </span>
+            </div>
+            <div className="flex flex-row w-full gap-x-8 mt-14">
+              <span className="border-t pt-6 text-2xl w-full">
+                Design Strategy
+              </span>
+              <span className="border-t pt-6 text-2xl w-full">
+                Data & Insights
+              </span>
+            </div>
+            <div className="flex flex-row w-full gap-x-8 mt-14">
+              <span className="border-t pt-6 text-2xl w-full">
+                Brand Experience
+              </span>
+              <span className="border-t pt-6 text-2xl w-full">
+                Web & App Design
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="bg-black">
+        <div className="text-white flex flex-col border-x border-t mx-2 border-white min-h-screen pr-10">
+          <div className="lg:ml-96 flex flex-col mb-24">
+            <span className="text-5xl font-medium lg:mt-20 lg:mb-40">
+              Levers of Brand Success.
+            </span>
+            <div className="flex flex-row gap-5">
+              <div className="border border-white flex flex-col p-5 pb-56 w-full">
+                <span className="text-3xl pb-5">Inovation</span>
+                <span className="text-lg">
+                  Position your brand with a fulfilling promise and purpose
+                  worth dealing with.
+                </span>
+              </div>
+              <div className="border border-white flex flex-col p-5 pb-56 w-full">
+                <span className="text-3xl pb-5">Inspiration</span>
+                <span className="text-lg">
+                  Frame your business with disruptive ideas, bold moves and
+                  transformative brand experiences.
+                </span>
+              </div>
+              <div className="border border-white flex flex-col p-5 pb-56 w-full">
+                <span className="text-3xl pb-5">Evolution</span>
+                <span className="text-lg">
+                  Keep moving fluidly to maintain relevancy in the market on the
+                  pulse of cultural changes and trends.
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
