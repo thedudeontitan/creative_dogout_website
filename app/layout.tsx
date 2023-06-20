@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen ">
           <Link className="" href="/">
             <div className="">
               <Image
@@ -65,7 +65,7 @@ export default function RootLayout({
               </Link>
             </div>
             <button className="bg-black text-white text-base font-medium px-2 py-1  mr-5 my-3">
-              Let's Talk
+              Let&apos;s Talk
             </button>
           </nav>
           {children}

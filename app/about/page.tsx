@@ -64,7 +64,7 @@ const team_info = [
 
 function page() {
   return (
-    <section className="">
+    <section className="bg-white">
       <div className="flex flex-col border-x mx-2 border-black min-h-screen ">
         <div className="mx-auto flex flex-col h-screen justify-center w-full">
           <div className="flex flex-col">
@@ -73,14 +73,14 @@ function page() {
             </span>
             <div className=" border-b border-black lg:mt-6 lg:mb-20" />
             <span className="lg:ml-96 text-2xl font-normal lg:pr-10 px-2 lg:px-0">
-              We deliver inspirational brand experiences. Together, let’s unlock
+              We deliver inspirational brand experiences. Together, let&apos;s unlock
               growth!
             </span>
             <span className="lg:ml-96 text-2xl font-normal lg:mt-10 lg:pr-10 px-2 lg:px-0">
-              Together, let’s unlock growth!
+              Together, let&apos;s unlock growth!
             </span>
             <button className="lg:ml-96 text-lg font-normal lg:mt-10 border border-black mx-auto px-4 py-2 flex flex-row gap-x-2 items-center hover:scale-[1.02] transition-all duration-500">
-              Let's connect <BsArrowRight />
+              Let&apos;s connect <BsArrowRight />
             </button>
           </div>
         </div>
