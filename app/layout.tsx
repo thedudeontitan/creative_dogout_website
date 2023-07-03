@@ -3,6 +3,7 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import Link from "next/link";
 import { MdOutlineCopyright } from "react-icons/md";
+import Navbar from "./(components)/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,53 +22,16 @@ export default function RootLayout({
       <body className={inter.className}>
         <main className="min-h-screen ">
           <Link className="" href="/">
-            <div className="">
-              <Image
-                src="/logo_final_BGP.jpg"
-                alt="logo"
-                width={80}
-                height={80}
-                className="fixed top-0 left-0 ml-8 mt-6 bg-purple-700 hover:scale-[1.02] transition-all"
-              />
-            </div>
+            <Image
+              src="/logo_final_BGP.jpg"
+              alt="logo"
+              width={80}
+              height={80}
+              className="fixed top-0 left-0 ml-8 mt-6 bg-purple-700 hover:scale-[1.02] transition-all z-20"
+            />
           </Link>
-          <nav className="fixed flex flex-row top-0 right-0 left-0">
-            <div className="flex flex-row my-5 mx-auto gap-x-14">
-              <Link
-                href="/about"
-                className="border-b-2 border-transparent hover:border-black transition-all duration-500"
-              >
-                <div className="text-black">About</div>
-              </Link>
-              <Link
-                href="/expertise"
-                className="border-b-2 border-transparent hover:border-black transition-all duration-500"
-              >
-                <div className="text-black">Expertise</div>
-              </Link>
-              <Link
-                href="/work"
-                className="border-b-2 border-transparent hover:border-black transition-all duration-500"
-              >
-                <div className="text-black">Work</div>
-              </Link>
-              <Link
-                href="/blogs"
-                className="border-b-2 border-transparent hover:border-black transition-all duration-500"
-              >
-                <div className="text-black">Blogs</div>
-              </Link>
-              <Link
-                href="/contact"
-                className="border-b-2 border-transparent hover:border-black transition-all duration-500"
-              >
-                <div className="text-black">Contact</div>
-              </Link>
-            </div>
-            <button className="bg-black text-white text-base font-medium px-2 py-1  mr-5 my-3">
-              Let&apos;s Talk
-            </button>
-          </nav>
+          <Navbar/>
+          
           {children}
         </main>
         <footer className="bg-slate-50 px-40 py-10 w-full">
@@ -98,8 +62,7 @@ export default function RootLayout({
               </Link>
             </div>
             <span className="ml-auto flex flex-row items-center">
-              <MdOutlineCopyright className="text-xl mx-1"/>
-
+              <MdOutlineCopyright className="text-xl mx-1" />
               2023 Creative Dugout
             </span>
           </div>
