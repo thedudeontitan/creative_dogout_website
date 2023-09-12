@@ -1,3 +1,10 @@
+![image](https://github.com/thedudeontitan/creative_dogout_website/assets/97180942/1748e1de-3bd7-4ca4-bb69-dbf708a9d2d3)
+
+
+![image](https://github.com/thedudeontitan/creative_dogout_website/assets/97180942/0fccd0f3-fbf1-4231-903a-a28d88a3a7b6)
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
