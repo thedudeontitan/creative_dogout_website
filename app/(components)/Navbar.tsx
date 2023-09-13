@@ -55,16 +55,10 @@ function Navbar() {
           >
             <div className="text-black">Blogs</div>
           </Link>
-          <Link
-            href="/contact"
-            className="border-b-2 border-transparent hover:border-black transition-all duration-500"
-          >
-            <div className="text-black">Contact</div>
-          </Link>
         </div>
-        <button className="bg-black text-white text-base font-medium px-2 py-1  mr-5 my-3">
+        <Link className="bg-black text-white text-base font-medium px-2 py-1  mr-5 my-3 flex items-center" href="/contact">
           Let&apos;s Talk
-        </button>
+        </Link>
       </nav>
       {/* } */}
     </div>
