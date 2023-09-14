@@ -37,18 +37,18 @@ export default function Home() {
 
 
   return (
-    <section className="">
-      <div className="flex flex-col border-x mx-2 border-black min-h-screen">
+    <section className="bg-black">
+      <div className=" flex flex-col border-x mx-2 border-white min-h-screen">
         <div className="bg-white h-screen  absolute -z-20"></div>
         <Spline
           className="h-screen top-0 right-0 left-0 absolute -z-10 "
           scene="https://prod.spline.design/vjAihqhjYhiHDc6X/scene.splinecode"
         />
         <div className="flex flex-col justify-center h-screen bg ">
-          <div className="text-5xl text-black font-medium lg:ml-20">
+          <div className="text-5xl text-white font-medium lg:ml-20">
             Innovate. Inspire. Evolve.
           </div>
-          <div className="text-4xl text-black font-medium lg:ml-20 mt-20">
+          <div className="text-4xl text-white font-medium lg:ml-20 mt-20">
             We build the most resilient and sustainable brands
           </div>
         </div>
@@ -104,7 +104,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col border-x border-t mx-2 border-black min-h-screen pr-10">
+      <div className="flex flex-col border-x border-t mx-2 text-white border-white min-h-screen pr-10 pb-20">
         <span className="mt-20 text-5xl font-medium lg:ml-96">Our clients vouch for us.</span>
         <div className="overflow-hidden lg:ml-96">
           <div className="mt-20 text-2xl gap-6 flex">
@@ -122,8 +122,8 @@ export default function Home() {
             {testimony_data.map((data, index) => (
               <button
                 key={data.key}
-                className={`border-t w-fit mr-12 ${index === currentIndex ? 'active border-purple-500' : ''}`}
-                onClick={() => (setCurrentIndex(data.key-1), console.log(currentIndex))}
+                className={`pt-2  w-fit mr-12 ${index === currentIndex ? 'active border-t border-purple-500' : ''}`}
+                onClick={() => (setCurrentIndex(data.key - 1), console.log(currentIndex))}
               >
                 <div className="flex flex-col text-2xl items-start">
                   <span className="font-medium ">{data.name}</span>
@@ -136,6 +136,25 @@ export default function Home() {
         </div>
       </div>
 
+      <div className="flex flex-col border-x text-white border-t mx-2 border-white pr-10 pb-20 lg:pl-96">
+
+        <div className="mt-20 flex flex-col text-5xl font-medium">
+          <span>We are born to disrupt,</span>
+          <span>are you?</span>
+        </div>
+        <div className="mt-20 text-2xl flex flex-col">
+          <span>Don't just dream of building your brand, if you’re a firm believer.</span>
+          <span>If you are ready to experience growth, join forces with us and we will differentiate you from the rest.</span>
+          <span className="mt-10">Rest assured your customers won’t reach your competitors.</span>
+        </div>
+      </div>
+      <div className="flex flex-col border-x text-white border-t mx-2 border-white pr-10 pb-20 lg:pl-96">
+
+          <span className="mt-20 text-5xl font-medium">Let’s grow together!</span>
+          
+        <button className=" border-white border w-fit px-4 py-2 mt-10 text-lg font-medium hover:scale-110 transition-all">Connect with us <FiArrowRight className="inline-block text-2xl"/></button>
+      </div>
+      
     </section>
   );
 }
