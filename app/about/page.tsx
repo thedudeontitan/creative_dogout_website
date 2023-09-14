@@ -3,64 +3,64 @@ import Link from "next/link";
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 
-const team_info = [
-  {
-    key: "1",
-    name: "John Doe",
-    position: "Position",
-    image: "/pfp.png",
-    linkedin: "https://www.linkedin.com/in/ankit-kokane-795162197/",
-  },
-  {
-    key: "2",
-    name: "John Doe",
-    position: "position",
-    image: "/pfp.png",
-    linkedin: "https://www.linkedin.com/in/ankit-kokane-795162197/",
-  },
-  {
-    key: "3",
-    name: "John Doe",
-    position: "position",
-    image: "/pfp.png",
-    linkedin: "https://www.linkedin.com/in/ankit-kokane-795162197/",
-  },
-  {
-    key: "4",
-    name: "John Doe",
-    position: "position",
-    image: "/pfp.png",
-    linkedin: "https://www.linkedin.com/in/ankit-kokane-795162197/",
-  },
-  {
-    key: "5",
-    name: "John Doe",
-    position: "position",
-    image: "/pfp.png",
-    linkedin: "https://www.linkedin.com/in/ankit-kokane-795162197/",
-  },
-  {
-    key: "6",
-    name: "John Doe",
-    position: "position",
-    image: "/pfp.png",
-    linkedin: "https://www.linkedin.com/in/ankit-kokane-795162197/",
-  },
-  {
-    key: "7",
-    name: "John Doe",
-    position: "position",
-    image: "/pfp.png",
-    linkedin: "https://www.linkedin.com/in/ankit-kokane-795162197/",
-  },
-  {
-    key: "8",
-    name: "John Doe",
-    position: "position",
-    image: "/pfp.png",
-    linkedin: "https://www.linkedin.com/in/ankit-kokane-795162197/",
-  },
-];
+// const team_info = [
+//   {
+//     key: "1",
+//     name: "John Doe",
+//     position: "Position",
+//     image: "/pfp.png",
+//     linkedin: "https://www.linkedin.com/in/ankit-kokane-795162197/",
+//   },
+//   {
+//     key: "2",
+//     name: "John Doe",
+//     position: "position",
+//     image: "/pfp.png",
+//     linkedin: "https://www.linkedin.com/in/ankit-kokane-795162197/",
+//   },
+//   {
+//     key: "3",
+//     name: "John Doe",
+//     position: "position",
+//     image: "/pfp.png",
+//     linkedin: "https://www.linkedin.com/in/ankit-kokane-795162197/",
+//   },
+//   {
+//     key: "4",
+//     name: "John Doe",
+//     position: "position",
+//     image: "/pfp.png",
+//     linkedin: "https://www.linkedin.com/in/ankit-kokane-795162197/",
+//   },
+//   {
+//     key: "5",
+//     name: "John Doe",
+//     position: "position",
+//     image: "/pfp.png",
+//     linkedin: "https://www.linkedin.com/in/ankit-kokane-795162197/",
+//   },
+//   {
+//     key: "6",
+//     name: "John Doe",
+//     position: "position",
+//     image: "/pfp.png",
+//     linkedin: "https://www.linkedin.com/in/ankit-kokane-795162197/",
+//   },
+//   {
+//     key: "7",
+//     name: "John Doe",
+//     position: "position",
+//     image: "/pfp.png",
+//     linkedin: "https://www.linkedin.com/in/ankit-kokane-795162197/",
+//   },
+//   {
+//     key: "8",
+//     name: "John Doe",
+//     position: "position",
+//     image: "/pfp.png",
+//     linkedin: "https://www.linkedin.com/in/ankit-kokane-795162197/",
+//   },
+// ];
 
 function page() {
   return (
@@ -79,7 +79,7 @@ function page() {
             <span className="lg:ml-96 text-2xl font-normal lg:mt-10 lg:pr-10 px-2 lg:px-0">
               Together, let&apos;s unlock growth!
             </span>
-            <button className="lg:ml-96 text-lg font-normal lg:mt-10 border border-black mx-auto px-4 py-2 flex flex-row gap-x-2 items-center hover:scale-[1.02] transition-all duration-500">
+            <button className="lg:ml-96 text-lg font-normal lg:mt-10 border border-black mx-auto px-4 py-2 flex flex-row gap-x-2 items-center hover:scale-105 hover:bg-black hover:text-white transition-all duration-500">
               Let&apos;s connect <BsArrowRight />
             </button>
           </div>
@@ -112,7 +112,8 @@ function page() {
           With Creative Dugout, you get a partner to operate, innovate and make
           winning brand experiences.{" "}
         </span>
-        <button className="lg:ml-96 text-lg font-normal lg:mt-5 border border-black mx-auto px-4 py-2 flex flex-row gap-x-2 items-center hover:scale-[1.02] transition-all duration-500">
+            <button className="lg:ml-96 text-lg font-normal lg:mt-5 border border-black mx-auto px-4 py-2 flex flex-row gap-x-2 items-center hover:scale-105 hover:bg-black hover:text-white transition-all duration-500">
+
           Know our expertise <BsArrowRight />
         </button>
       </div>
@@ -136,7 +137,7 @@ function page() {
           We have some curious, creative thinkers and problem solvers to
           cultivate your brand growth. Expect true commitment at every step.
         </span>
-        <div className="lg:ml-96 mt-20">
+        {/* <div className="lg:ml-96 mt-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
             {team_info.map((info) => (
               <Link
@@ -152,7 +153,7 @@ function page() {
               </Link>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
