@@ -109,40 +109,33 @@ export default function Home() {
         <div className="overflow-hidden lg:ml-96">
           <div className="mt-20 text-2xl gap-6 flex">
             <div className="text-2xl">{currentIndex + 1} - {testimony_data.length}</div>
-            <button onClick={handlePrev} className=" hover:scale-125 transition-all duration-500"><FiArrowLeft /> </button>
-            <button onClick={handleNext} className=" hover:scale-125 transition-all duration-500"><FiArrowRight /></button>
+            <button onClick={handlePrev} className="hover:scale-125 transition-all duration-500"><FiArrowLeft /> </button>
+            <button onClick={handleNext} className="hover:scale-125 transition-all duration-500"><FiArrowRight /></button>
           </div>
           <div
-            className={`mt-10 text-[37px] leading-10 font-medium mr-10 transform translate-x-0 opacity-0 transition-all duration-700 ease-out ${transitioning ? 'translate-x-[250%] opacity-0' : 'translate-x-0 opacity-100'
+            className={`mt-10 h-80 text-[37px] leading-10 font-medium mr-10 transform translate-x-0 opacity-0 transition-all duration-700 ease-out ${transitioning ? 'translate-x-[250%] opacity-0' : 'translate-x-0 opacity-100'
               }`}
           >
-            <p>"{testimony_data[currentIndex].comment}"</p>
+            <p>"{testimony_data[currentIndex] && testimony_data[currentIndex].comment}"</p>
           </div>
-          <div className="flex flex-row mt-16 ">
-            <button className="flex-grow border-t border-purple-500 mr-12 " onClick={() => (setCurrentIndex(testimony_data[currentIndex].key -1))}>
-              <div className="flex flex-col text-2xl items-start">
-                <span className="font-medium ">{testimony_data[currentIndex].name}</span>
-                <span className="">{testimony_data[currentIndex ].role}</span>
-                <span>{testimony_data[currentIndex].company}</span>
-              </div>
-            </button>
-            <button className="flex-grow mr-12" onClick={() => (setCurrentIndex(testimony_data[currentIndex].key))}>
-              <div className="flex flex-col text-2xl items-start">
-                <span className="font-medium ">{testimony_data[currentIndex + 1].name}</span>
-                <span className="">{testimony_data[currentIndex + 1].role}</span>
-                <span>{testimony_data[currentIndex + 1].company}</span>
-              </div>
-            </button>
-            <button className="flex-grow mr-12" onClick={() => ((testimony_data[currentIndex].key +1)?setCurrentIndex(testimony_data[currentIndex].key +1):testimony_data[currentIndex].key)}>
-              <div className="flex flex-col text-2xl items-start">
-                <span className="font-medium ">{testimony_data[currentIndex + 2].name}</span>
-                <span className="">{testimony_data[currentIndex + 2].role}</span>
-                <span>{testimony_data[currentIndex + 2].company}</span>
-              </div>
-            </button>
+          <div className="flex flex-row mt-16">
+            {testimony_data.map((data, index) => (
+              <button
+                key={data.key}
+                className={`border-t w-fit mr-12 ${index === currentIndex ? 'active border-purple-500' : ''}`}
+                onClick={() => (setCurrentIndex(data.key-1), console.log(currentIndex))}
+              >
+                <div className="flex flex-col text-2xl items-start">
+                  <span className="font-medium ">{data.name}</span>
+                  <span className="">{data.role}</span>
+                  <span>{data.company}</span>
+                </div>
+              </button>
+            ))}
           </div>
         </div>
       </div>
+
     </section>
   );
 }
