@@ -27,7 +27,7 @@ export default function RootLayout({
               alt="logo"
               width={80}
               height={80}
-              className="fixed top-0 left-0 ml-8 mt-6 bg-purple-700 hover:scale-[1.02] transition-all z-20"
+              className="fixed top-0 left-0 ml-8 mt-6 bg-purple-700 hover:scale-[1.02] transition-all z-50"
             />
           </Link>
           <Navbar/>
