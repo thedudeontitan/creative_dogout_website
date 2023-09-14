@@ -3,29 +3,29 @@ import React from "react";
 
 function page() {
   return (
-    <section className="">
+    <section className="bg-white">
       <div className="flex flex-col lg:flex-row border-x mx-2 min-h-screen border-black pr-10">
         <form className="lg:ml-20 flex flex-col gap-5 lg:mt-60 items-start">
           <input
-            className="p-2 border"
+            className="p-2 border bg-slate-100"
             type="text"
             placeholder="Name"
             required={true}
           />
           <input
-            className="p-2 border"
+            className="p-2 border bg-slate-100"
             type="text"
             placeholder="Company"
             required={true}
           />
           <input
-            className="p-2 border"
+            className="p-2 border bg-slate-100"
             type="text"
             placeholder="Email"
             required={true}
           />
           <input
-            className="p-2 border"
+            className="p-2 border bg-slate-100"
             type="text"
             placeholder="Message"
             required={true}
@@ -56,6 +56,7 @@ function page() {
           <span className="text-lg">Gurugram, Haryana - 122003</span>
         </div>
       </div>
+      <div className="bg-purple-950 h-[80vh]"></div>
     </section>
   );
 }
