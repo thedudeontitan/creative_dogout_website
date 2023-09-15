@@ -86,7 +86,7 @@ function page() {
         </div>
       </div>
       <div className="bg-purple-950 h-[80vh]"></div>
-      <div className="flex flex-col border-x mx-2 border-black min-h-screen gap-y-8 lg:pr-10 px-2 lg:px-0">
+      <div className="flex flex-col border-x mx-2 border-black min-h-screen gap-y-8 lg:pr-10 px-2 lg:px-0 mb-20">
         <span className="lg:text-4xl lg:ml-96 font-medium mt-20 mb-10">
           Building through Purpose driven Communications.
         </span>
@@ -131,13 +131,13 @@ function page() {
         </span>
         <div className="border-b border-black lg:mt-6 lg:mb-20" />
       </div>
-      <div className="flex flex-col border-x mx-2 border-black min-h-screen gap-y-8 lg:pr-10 px-2 lg:px-0">
+      {/* <div className="flex flex-col border-x mx-2 border-black min-h-screen gap-y-8 lg:pr-10 px-2 lg:px-0">
         <span className="lg:text-4xl lg:ml-96 mt-20">Our People.</span>
         <span className="lg:text-2xl lg:ml-96">
           We have some curious, creative thinkers and problem solvers to
-          cultivate your brand growth. Expect true commitment at every step.
+          cultivate your brand growth. Expect true commitment at every step .
         </span>
-        {/* <div className="lg:ml-96 mt-20">
+        <div className="lg:ml-96 mt-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
             {team_info.map((info) => (
               <Link
@@ -153,8 +153,8 @@ function page() {
               </Link>
             ))}
           </div>
-        </div> */}
-      </div>
+        </div>
+      </div> */}
     </section>
   );
 }

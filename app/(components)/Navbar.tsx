@@ -30,7 +30,7 @@ function Navbar() {
           isScrolled
             ? "transform -translate-y-0"
             : "transform -translate-y-full"
-        } ${path=="/"?"bg-black text-white":"bg-white text-black"}`}
+        } ${(path=="/"|| path== "/brandcommunication")?"bg-black text-white":"bg-white text-black"}`}
       >
         <div className="flex flex-row my-5 mx-auto gap-x-14">
           <Link
@@ -46,10 +46,10 @@ function Navbar() {
             <div className="">Expertise</div>
           </Link>
           <Link
-            href="/work"
+            href="/brandcommunication"
             className="border-b-2 border-transparent hover:border-white transition-all duration-500"
           >
-            <div className="">Work</div>
+            <div className="">Brand Communication</div>
           </Link>
           <Link
             href="/blogs"
