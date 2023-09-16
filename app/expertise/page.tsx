@@ -97,7 +97,7 @@ function page() {
       <div className="flex border-x mx-2 border-black border-b ">
         <div className="flex flex-col my-20 lg:ml-96">
           <span className="mb-20 text-5xl font-medium lg:pr-10 px-2 lg:px-0 w-full"> Begin Your Journey to growth.</span>
-          <button className="w-fit border border-black px-4 py-2 text-xl hover:bg-black hover:text-white transition-all duration-500 hover:scale-105">Let's Talk</button>
+          <button className="w-fit border border-black px-4 py-2 text-xl hover:bg-black hover:text-white transition-all duration-500 hover:scale-105">Let&apos;s Talk</button>
         </div>
       </div>
     </section>

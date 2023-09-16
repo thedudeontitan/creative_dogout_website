@@ -12,7 +12,7 @@ function page() {
                 <source src="video.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
-            <div className="absolute bg-black opacity-60 flex flex-col  border-white min-h-screen">
+            <div className="absolute bg-black bg-opacity-60 flex flex-col  border-white min-h-screen">
                 <div className='border-x mx-2 min-h-screen'>
                     <div className="flex flex-col justify-center">
 
@@ -28,7 +28,7 @@ function page() {
                     </div>
                 </div>
             </div>
-            <div className=" flex flex-col border-x mx-2 border-white min-h-screen">
+            <div className="flex flex-col border-x mx-2 border-white min-h-screen">
                 <div>
                     <span>Who we are </span>
                     <span>We are strategists and creators. Being an innovation-driven woman-led company, we are powered by eccentric ideas. Our strategists, creators, designers, and tech enthusiasts deliver visionary solutions by thoroughly interacting with briefs and blending their creative skillset and technological acumen to bring forth authentic and poignant strategies to every client challenge. Our campaigns do more than merely grab attention - they establish Thought Leadership and make every brand Influential. </span>

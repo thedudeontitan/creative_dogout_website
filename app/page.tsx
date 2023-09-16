@@ -89,7 +89,7 @@ export default function Home() {
             </div>
             <div className="flex flex-row gap-5">
               {lever.map((data) => (
-                <div>
+                <div key={data.key}>
                   <Reveal>
                     <div className="border border-white flex flex-col p-5 pb-56 w-[23rem] h-[10rem]">
                       <span className="text-3xl pb-5">{data.title}</span>
@@ -116,7 +116,7 @@ export default function Home() {
             className={`mt-10 h-80 text-[37px] leading-10 font-medium mr-10 transform translate-x-0 opacity-0 transition-all duration-700 ease-out ${transitioning ? 'translate-x-[250%] opacity-0' : 'translate-x-0 opacity-100'
               }`}
           >
-            <p>"{testimony_data[currentIndex] && testimony_data[currentIndex].comment}"</p>
+            <p>&quot;{testimony_data[currentIndex] && testimony_data[currentIndex].comment}&quot;</p>
           </div>
           <div className="flex flex-row mt-16">
             {testimony_data.map((data, index) => (
@@ -143,7 +143,7 @@ export default function Home() {
           <span>are you?</span>
         </div>
         <div className="mt-20 text-2xl flex flex-col">
-          <span>Don't just dream of building your brand, if you’re a firm believer.</span>
+          <span>Don&apos;t just dream of building your brand, if you’re a firm believer.</span>
           <span>If you are ready to experience growth, join forces with us and we will differentiate you from the rest.</span>
           <span className="mt-10">Rest assured your customers won’t reach your competitors.</span>
         </div>
