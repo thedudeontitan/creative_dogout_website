@@ -21,7 +21,7 @@ function Navbar() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [prevScrollPos]);
-  
+
   return (
     <div>
       {/* {show && */}
@@ -34,25 +34,25 @@ function Navbar() {
         <div className="flex flex-row my-5 mx-auto gap-x-14">
           <Link
             href="/about"
-            className="border-b-2 border-transparent hover:border-white transition-all duration-500"
+            className={`border-b-2 border-transparent  transition-all duration-500 ${(path=="/"|| path== "/brandcommunication")?"hover:border-white":"hover:border-black"}`}
           >
             <div className="">About</div>
           </Link>
           <Link
             href="/expertise"
-            className="border-b-2 border-transparent hover:border-white transition-all duration-500"
+            className={`border-b-2 border-transparent  transition-all duration-500 ${(path=="/"|| path== "/brandcommunication")?"hover:border-white":"hover:border-black"}`}
           >
             <div className="">Expertise</div>
           </Link>
           <Link
             href="/brandcommunication"
-            className="border-b-2 border-transparent hover:border-white transition-all duration-500"
+            className={`border-b-2 border-transparent  transition-all duration-500 ${(path=="/"|| path== "/brandcommunication")?"hover:border-white":"hover:border-black"}`}
           >
             <div className="">Brand Communication</div>
           </Link>
           <Link
             href="/blogs"
-            className="border-b-2 border-transparent hover:border-white transition-all duration-500"
+            className={`border-b-2 border-transparent  transition-all duration-500 ${(path=="/"|| path== "/brandcommunication")?"hover:border-white":"hover:border-black"}`}
           >
             <div className="">Blogs</div>
           </Link>
