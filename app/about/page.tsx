@@ -1,7 +1,10 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
+import Spline from "@splinetool/react-spline";
+
 
 // const team_info = [
 //   {
@@ -64,58 +67,68 @@ import { BsArrowRight } from "react-icons/bs";
 
 function page() {
   return (
-    <section className="bg-white">
-      <div className="flex flex-col border-x mx-2 border-black min-h-screen ">
-        <div className="mx-auto flex flex-col h-screen justify-center w-full">
-          <div className="flex flex-col">
-            <span className="lg:ml-96 mt-20 text-5xl font-medium lg:pr-10 px-2 lg:px-0">
-              Stimulating growth for ambitious brands.
-            </span>
-            <div className=" border-b border-black lg:mt-6 lg:mb-20" />
-            <span className="lg:ml-96 text-2xl font-normal lg:pr-10 px-2 lg:px-0">
-              We deliver inspirational brand experiences. Together, let&apos;s unlock
-              growth!
-            </span>
-            <span className="lg:ml-96 text-2xl font-normal lg:mt-10 lg:pr-10 px-2 lg:px-0">
-              Together, let&apos;s unlock growth!
-            </span>
-            <button className="lg:ml-96 text-lg font-normal lg:mt-10 border border-black mx-auto px-4 py-2 flex flex-row gap-x-2 items-center hover:scale-105 hover:bg-black hover:text-white transition-all duration-500">
-              Let&apos;s connect <BsArrowRight />
-            </button>
+    <section className="">
+      <div className="min-h-screen bg-black bg-opacity-70">
+
+        <div className="bg-white h-screen  absolute -z-20"></div>
+        <Spline
+          className="h-screen top-0 right-0 left-0 absolute -z-10 "
+          scene="https://prod.spline.design/vjAihqhjYhiHDc6X/scene.splinecode"
+        />
+        <div className="border-x mx-2 border-white text-white">
+          <div className="mx-auto flex flex-col h-screen justify-center w-full">
+            <div className="flex flex-col">
+              <span className="lg:ml-96 mt-20 text-5xl font-medium lg:pr-10 px-2 lg:px-0">
+                Stimulating growth for ambitious brands.
+              </span>
+              <div className=" border-b border-white lg:mt-6 lg:mb-20" />
+              <span className="lg:ml-96 text-2xl font-normal lg:pr-10 px-2 lg:px-0">
+                We deliver inspirational brand experiences. Together, let&apos;s unlock
+                growth!
+              </span>
+              <span className="lg:ml-96 text-2xl font-normal lg:mt-10 lg:pr-10 px-2 lg:px-0">
+                Together, let&apos;s unlock growth!
+              </span>
+              <button className="lg:ml-96 text-lg font-normal lg:mt-10 border border-white hover:border-black mx-auto px-4 py-2 flex flex-row gap-x-2 items-center hover:scale-105 hover:bg-black hover:text-white transition-all duration-500">
+                Let&apos;s connect <BsArrowRight />
+              </button>
+            </div>
           </div>
         </div>
       </div>
       <div className="bg-purple-950 h-[80vh]"></div>
-      <div className="flex flex-col border-x mx-2 border-black min-h-screen gap-y-8 lg:pr-10 px-2 lg:px-0 mb-20">
-        <span className="lg:text-4xl lg:ml-96 font-medium mt-20 mb-10">
-          Building through Purpose driven Communications.
-        </span>
-        <span className="lg:text-3xl lg:ml-96 font-medium">
-          A B2B growth partner for several agencies and a stimulator for brands.
-          We build, promote and protect businesses to rise above challenges -
-          unlock growth potential.
-        </span>
-        <span className="lg:text-3xl lg:ml-96 font-medium">
-          Creative Dugout started as a Media Content Agency that gradually
-          evolved into a brand communications company with bold initiatives.
-          Driven by perseverance, we instill confidence in our clients to power
-          disruption.
-        </span>
-        <span className="lg:text-3xl lg:ml-96 font-medium">
-          Creative Dugout is deeply rooted in multidimensional research and the
-          methodology of delivering excellence in brand experience. Our
-          interdisciplinary team delivers inspiration for ambitious brands to
-          move with speed and enables them to foster strong relationships in the
-          industry.
-        </span>
-        <span className="lg:text-2xl lg:ml-96">
-          With Creative Dugout, you get a partner to operate, innovate and make
-          winning brand experiences.{" "}
-        </span>
-            <button className="lg:ml-96 text-lg font-normal lg:mt-5 border border-black mx-auto px-4 py-2 flex flex-row gap-x-2 items-center hover:scale-105 hover:bg-black hover:text-white transition-all duration-500">
+      <div className="bg-white min-h-screen">
+        <div className=" flex flex-col border mx-2 border-black gap-y-8 lg:pr-10 px-2 lg:px-0 pb-20">
+          <span className="lg:text-4xl lg:ml-96 font-medium mt-20 mb-10">
+            Building through Purpose driven Communications.
+          </span>
+          <span className="lg:text-3xl lg:ml-96 font-medium">
+            A B2B growth partner for several agencies and a stimulator for brands.
+            We build, promote and protect businesses to rise above challenges -
+            unlock growth potential.
+          </span>
+          <span className="lg:text-3xl lg:ml-96 font-medium">
+            Creative Dugout started as a Media Content Agency that gradually
+            evolved into a brand communications company with bold initiatives.
+            Driven by perseverance, we instill confidence in our clients to power
+            disruption.
+          </span>
+          <span className="lg:text-3xl lg:ml-96 font-medium">
+            Creative Dugout is deeply rooted in multidimensional research and the
+            methodology of delivering excellence in brand experience. Our
+            interdisciplinary team delivers inspiration for ambitious brands to
+            move with speed and enables them to foster strong relationships in the
+            industry.
+          </span>
+          <span className="lg:text-2xl lg:ml-96">
+            With Creative Dugout, you get a partner to operate, innovate and make
+            winning brand experiences.{" "}
+          </span>
+          <button className="lg:ml-96 text-lg font-normal lg:mt-5 border border-black mx-auto px-4 py-2 flex flex-row gap-x-2 items-center hover:scale-105 hover:bg-black hover:text-white transition-all duration-500">
 
-          Know our expertise <BsArrowRight />
-        </button>
+            Know our expertise <BsArrowRight />
+          </button>
+        </div>
       </div>
       <div className="bg-purple-950 h-[80vh]"></div>
       <div className="flex flex-col border-x mx-2 border-black gap-y-8 ">
