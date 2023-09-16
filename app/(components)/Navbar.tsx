@@ -7,12 +7,13 @@ function Navbar() {
   const path = usePathname();
   const [isScrolled, setIsScrolled] = useState(true);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [scrollInit, setScrollInit] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
       const isScrolledUp = prevScrollPos > currentScrollPos;
-
+      setScrollInit(currentScrollPos);
       setIsScrolled(isScrolledUp);
       setPrevScrollPos(currentScrollPos);
     };
@@ -28,7 +29,7 @@ function Navbar() {
       <nav
         className={`z-40 flex flex-row top-0 right-0 left-0  fixed w-full transition-all duration-500 
         ${isScrolled ? "transform -translate-y-0" : "transform -translate-y-full"}
-        ${(window.scrollY != 0)?(path=="/"|| path== "/brandcommunication")?"bg-black text-white":"bg-white text-black":(path=="/"|| path== "/brandcommunication")?"bg-transparent text-white":"bg-transparent text-black"}
+        ${(scrollInit != 0)?(path=="/"|| path== "/brandcommunication")?"bg-black text-white":"bg-white text-black":(path=="/"|| path== "/brandcommunication")?"bg-transparent text-white":"bg-transparent text-black"}
         `}
       >
         <div className="flex flex-row my-5 mx-auto gap-x-14">
