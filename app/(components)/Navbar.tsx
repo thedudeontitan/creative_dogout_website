@@ -8,15 +8,19 @@ function Navbar() {
   const [isScrolled, setIsScrolled] = useState(true);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
 
+  useEffect(()=> {
+
+  }
+
+  )
   useEffect(() => {
     const handleScroll = () => {
-      const currentScrollPos = window.pageYOffset;
+      const currentScrollPos = window.scrollY;
       const isScrolledUp = prevScrollPos > currentScrollPos;
 
       setIsScrolled(isScrolledUp);
       setPrevScrollPos(currentScrollPos);
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -26,11 +30,10 @@ function Navbar() {
     <div>
       {/* {show && */}
       <nav
-        className={`z-40 flex flex-row top-0 right-0 left-0  fixed w-full transition-all duration-500 ${
-          isScrolled
-            ? "transform -translate-y-0"
-            : "transform -translate-y-full"
-        } ${(path=="/"|| path== "/brandcommunication")?"bg-black text-white":"bg-white text-black"}`}
+        className={`z-40 flex flex-row top-0 right-0 left-0  fixed w-full transition-all duration-500 
+        ${isScrolled ? "transform -translate-y-0" : "transform -translate-y-full"}
+        ${(window.scrollY != 0)?(path=="/"|| path== "/brandcommunication")?"bg-black text-white":"bg-white text-black":(path=="/"|| path== "/brandcommunication")?"bg-transparent text-white":"bg-transparent text-black"}
+        `}
       >
         <div className="flex flex-row my-5 mx-auto gap-x-14">
           <Link
@@ -58,7 +61,7 @@ function Navbar() {
             <div className="">Blogs</div>
           </Link>
         </div>
-        <Link className="bg-black text-white text-base font-medium px-2 py-1  mr-5 my-3 flex items-center" href="/contact">
+        <Link className={` text-base font-medium px-2 py-1  mr-5 my-3 flex items-center ${(path=="/"|| path== "/brandcommunication")?"border-white border text-white":"border-black border text-black"}`} href="/contact">
           Let&apos;s Talk
         </Link>
       </nav>
