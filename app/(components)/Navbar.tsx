@@ -8,11 +8,6 @@ function Navbar() {
   const [isScrolled, setIsScrolled] = useState(true);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
 
-  useEffect(()=> {
-
-  }
-
-  )
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
@@ -26,6 +21,7 @@ function Navbar() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [prevScrollPos]);
+  
   return (
     <div>
       {/* {show && */}
