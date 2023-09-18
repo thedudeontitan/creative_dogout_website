@@ -38,9 +38,17 @@ export default function Home() {
 
   return (
     <section className="bg-black">
-      <div className=" flex flex-col border mx-2 border-white min-h-screen">
-
-        <div className="flex flex-col justify-center h-screen ">
+      <video
+        className=" w-full h-screen object-cover"
+        autoPlay
+        loop
+        muted
+      >
+        <source src="video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div className="absolute top-0 bg-black bg-opacity-70 flex flex-col border-white">
+        <div className=" flex flex-col justify-center h-screen border mx-2">
           <div className="text-4xl lg:text-5xl text-white mb-5 font-medium lg:ml-20 ml-5 flex flex-col lg:flex-row">
             <span>Innovate.</span> <span>Inspire.</span> <span>Evolve.</span>
           </div>
@@ -131,15 +139,15 @@ export default function Home() {
             ))}
           </div>
           <button
-                className={`pt-2 w-fit mr-12 border-t border-purple-500`}
-                onClick={() => (setCurrentIndex(testimony_data[currentIndex].key - 1), console.log(currentIndex))}
-              >
-                <div className="flex flex-col text-lg lg:text-2xl items-start">
-                  <span className="font-medium ">{testimony_data[currentIndex].name}</span>
-                  <span className="">{testimony_data[currentIndex].role}</span>
-                  <span>{testimony_data[currentIndex].company}</span>
-                </div>
-              </button>
+            className={`pt-2 w-fit mr-12 border-t border-purple-500`}
+            onClick={() => (setCurrentIndex(testimony_data[currentIndex].key - 1), console.log(currentIndex))}
+          >
+            <div className="flex flex-col text-lg lg:text-2xl items-start">
+              <span className="font-medium ">{testimony_data[currentIndex].name}</span>
+              <span className="">{testimony_data[currentIndex].role}</span>
+              <span>{testimony_data[currentIndex].company}</span>
+            </div>
+          </button>
         </div>
       </div>
 
