@@ -83,11 +83,11 @@ export default function Home() {
                 </span>
               </Reveal>
             </div>
-            <div className="flex flex-row gap-5">
+            <div className="flex flex-col lg:flex-row gap-5">
               {lever.map((data) => (
                 <div key={data.key}>
                   <Reveal>
-                    <div className="border border-white flex flex-col p-5 pb-56 w-[23rem] h-[10rem]">
+                    <div className="border border-white flex flex-col p-5 pb-56 lg:w-[23rem] h-[10rem]">
                       <span className="text-3xl pb-5">{data.title}</span>
                       <span className="text-lg">
                         {data.description}

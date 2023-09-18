@@ -1,4 +1,3 @@
-import Image from "next/image";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Link from "next/link";
@@ -21,16 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <main className="min-h-screen ">
-          <div className="fixed h-16 w-16 lg:h-20 lg:w-20 ml-8 mt-6 bg-purple-700 hover:scale-[1.02] transition-all z-50">
-            <Link className="" href="/">
-              <Image
-                src="/logo_final_BGP.jpg"
-                alt="logo"
-                fill={true}
-                className=""
-              />
-            </Link>
-          </div>
+
           <Navbar />
 
           {children}
