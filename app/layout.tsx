@@ -21,48 +21,51 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <main className="min-h-screen ">
-          <Link className="" href="/">
-            <Image
-              src="/logo_final_BGP.jpg"
-              alt="logo"
-              width={80}
-              height={80}
-              className="fixed top-0 left-0 ml-8 mt-6 bg-purple-700 hover:scale-[1.02] transition-all z-50"
-            />
-          </Link>
-          <Navbar/>
-          
+          <div className="fixed h-16 w-16 lg:h-20 lg:w-20 ml-8 mt-6 bg-purple-700 hover:scale-[1.02] transition-all z-50">
+            <Link className="" href="/">
+              <Image
+                src="/logo_final_BGP.jpg"
+                alt="logo"
+                fill={true}
+                className=""
+              />
+            </Link>
+          </div>
+          <Navbar />
+
           {children}
         </main>
-        <footer className="bg-slate-50 px-40 py-10 w-full">
+        <footer className="bg-slate-50 px-2 lg:px-40 py-10 w-full">
           <div className="mb-12">
             <span>FOLLOW US</span>
           </div>
-          <div className="flex flex-row">
-            <div className="flex flex-row gap-x-2">
-              <Link
-                href=""
-                className="border-b-2 border-transparent hover:border-black transition-all duration-500"
-              >
-                About
-              </Link>
-              {"  |  "}
-              <Link
-                href=""
-                className="border-b-2 border-transparent hover:border-black transition-all duration-500"
-              >
-                Terms of Use
-              </Link>
-              {"   |   "}
-              <Link
-                href=""
-                className="border-b-2 border-transparent hover:border-black transition-all duration-500"
-              >
-                Contact
-              </Link>
+          <div className="flex flex-col lg:flex-row ">
+            <div className="flex flex-row">
+              <div className="flex flex-row gap-x-2">
+                <Link
+                  href=""
+                  className="border-b-2 border-transparent hover:border-black transition-all duration-500"
+                >
+                  About
+                </Link>
+                {"  |  "}
+                <Link
+                  href=""
+                  className="border-b-2 border-transparent hover:border-black transition-all duration-500"
+                >
+                  Terms of Use
+                </Link>
+                {"   |   "}
+                <Link
+                  href=""
+                  className="border-b-2 border-transparent hover:border-black transition-all duration-500"
+                >
+                  Contact
+                </Link>
+              </div>
             </div>
-            <span className="ml-auto flex flex-row items-center">
-              <MdOutlineCopyright className="text-xl mx-1" />
+            <span className=" mt-10 lg:mt-0 lg:ml-auto flex flex-row items-center">
+              <MdOutlineCopyright className="text-xl mr-1 lg:mx-1" />
               2023 Creative Dugout
             </span>
           </div>
