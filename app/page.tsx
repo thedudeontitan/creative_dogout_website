@@ -37,7 +37,7 @@ export default function Home() {
 
 
   return (
-    <section className="bg-black">
+    <section className="bg-black ">
       <video
         className=" w-full h-screen object-cover"
         autoPlay
@@ -47,8 +47,8 @@ export default function Home() {
         <source src="video.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div className="absolute top-0 bg-black bg-opacity-70 flex flex-col border-white">
-        <div className=" flex flex-col justify-center h-screen border mx-2">
+      <div className="absolute top-0 left-0 right-0 bg-black bg-opacity-70 flex flex-col border-white">
+        <div className=" flex flex-col justify-center h-screen border mx-2 ">
           <div className="text-4xl lg:text-5xl text-white mb-5 font-medium lg:ml-20 ml-5 flex flex-col lg:flex-row">
             <span>Innovate.</span> <span>Inspire.</span> <span>Evolve.</span>
           </div>
