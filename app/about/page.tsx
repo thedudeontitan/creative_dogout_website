@@ -75,21 +75,20 @@ function page() {
           className="h-screen top-0 right-0 left-0 absolute -z-10 "
           scene="https://prod.spline.design/vjAihqhjYhiHDc6X/scene.splinecode"
         />
-        <div className="border-x mx-2 border-white text-white">
+        <div className="border-x mx-2 px-5 border-white text-white">
           <div className="mx-auto flex flex-col h-screen justify-center w-full">
-            <div className="flex flex-col">
-              <span className="lg:ml-96 mt-20 text-5xl font-medium lg:pr-10 px-2 lg:px-0">
+            <div className="flex flex-col gap-5 lg:gap-0">
+              <span className="lg:ml-96 mt-20 text-2xl lg:text-5xl font-medium lg:pr-10 px-2 lg:px-0">
                 Stimulating growth for ambitious brands.
               </span>
-              <div className=" border-b border-white lg:mt-6 lg:mb-20" />
-              <span className="lg:ml-96 text-2xl font-normal lg:pr-10 px-2 lg:px-0">
-                We deliver inspirational brand experiences. Together, let&apos;s unlock
-                growth!
+              <div className=" border-b border-white lg:mt-6 lg:mb-20 -mx-5" />
+              <span className="lg:ml-96 text-xl lg:text-2xl font-normal lg:pr-10 px-2 lg:px-0">
+                We deliver inspirational brand experiences.
               </span>
-              <span className="lg:ml-96 text-2xl font-normal lg:mt-10 lg:pr-10 px-2 lg:px-0">
+              <span className="lg:ml-96 text-xl lg:text-2xl font-normal lg:mt-10 lg:pr-10 px-2 lg:px-0">
                 Together, let&apos;s unlock growth!
               </span>
-              <button className="lg:ml-96 text-lg font-normal lg:mt-10 border border-white hover:border-black mx-auto px-4 py-2 flex flex-row gap-x-2 items-center hover:scale-105 hover:bg-black hover:text-white transition-all duration-500">
+              <button className="lg:ml-96 lg:text-lg font-normal lg:mt-10 border border-white hover:border-black w-fit lg:mx-auto px-4 py-2 flex flex-row gap-x-2 items-center hover:scale-105 hover:bg-black hover:text-white transition-all duration-500">
                 Let&apos;s connect <BsArrowRight />
               </button>
             </div>
@@ -98,8 +97,8 @@ function page() {
       </div>
       <div className="bg-purple-950 h-[80vh]"></div>
       <div className="bg-white min-h-screen">
-        <div className=" flex flex-col border mx-2 border-black gap-y-8 lg:pr-10 px-2 lg:px-0 pb-20">
-          <span className="lg:text-4xl lg:ml-96 font-medium mt-20 mb-10">
+        <div className=" flex flex-col border mx-2 px-5 border-black gap-y-8 lg:pr-10 lg:px-0 pb-20">
+          <span className="text-xl lg:text-4xl lg:ml-96 font-medium mt-10 lg:mt-20 lg:mb-10">
             Building through Purpose driven Communications.
           </span>
           <span className="lg:text-3xl lg:ml-96 font-medium">
@@ -124,15 +123,15 @@ function page() {
             With Creative Dugout, you get a partner to operate, innovate and make
             winning brand experiences.{" "}
           </span>
-          <button className="lg:ml-96 text-lg font-normal lg:mt-5 border border-black mx-auto px-4 py-2 flex flex-row gap-x-2 items-center hover:scale-105 hover:bg-black hover:text-white transition-all duration-500">
+          <button className="lg:ml-96 lg:text-lg font-normal lg:mt-5 border border-black mx-auto px-4 py-2 flex flex-row gap-x-2 items-center hover:scale-105 hover:bg-black hover:text-white transition-all duration-500">
 
             Know our expertise <BsArrowRight />
           </button>
         </div>
       </div>
       <div className="bg-purple-950 h-[80vh]"></div>
-      <div className="flex flex-col border-x mx-2 border-black gap-y-8 ">
-        <span className="lg:text-3xl font-medium lg:mt-20 lg:ml-96 lg:pr-10 px-2 lg:px-0">
+      <div className="flex flex-col border-x mx-2 border-black gap-y-8 px-5">
+        <span className="text-xl lg:text-3xl font-medium mt-10 lg:mt-20 lg:ml-96 lg:pr-10 px-2 lg:px-0">
           At Creative Dugout, our work principles act as a layer of protection
           for our clients.
         </span>
@@ -142,7 +141,7 @@ function page() {
           expertise with stakeholders’ interests. We are dedicated to building
           long-term rewarding relationships with clients.
         </span>
-        <div className="border-b border-black lg:mt-6 lg:mb-20" />
+        <div className="border-b border-black lg:mt-6 lg:mb-20 -mx-5" />
       </div>
       {/* <div className="flex flex-col border-x mx-2 border-black min-h-screen gap-y-8 lg:pr-10 px-2 lg:px-0">
         <span className="lg:text-4xl lg:ml-96 mt-20">Our People.</span>
