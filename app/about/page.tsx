@@ -96,7 +96,7 @@ function page() {
         </div>
       </div>
       <div className="bg-purple-950 h-[80vh]"></div>
-      <div className="bg-white min-h-screen">
+      <div className="bg-white lg:min-h-screen">
         <div className=" flex flex-col border mx-2 px-5 border-black gap-y-8 lg:pr-10 lg:px-0 pb-20">
           <span className="text-xl lg:text-4xl lg:ml-96 font-medium mt-10 lg:mt-20 lg:mb-10">
             Building through Purpose driven Communications.
