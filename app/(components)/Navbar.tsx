@@ -97,9 +97,9 @@ function Navbar() {
         <button onClick={handleMobileNav} className="font-medium ml-auto p-2 m-3" >Menu</button>
         {
           mobileNavVisible &&
-          <div className="absolute h-screen w-screen text-white bg-black z-[4000] top-0 bottom-0 flex">
-            <button onClick={handleMobileNav} className="absolute text-white font-medium top-0 right-0 p-2 m-3 h-fit w-fit">Close</button>
-            <div onClick={handleMobileNav} className="relative flex left-0 top-0 flex-col px-5 pt-10 text-3xl gap-8 font-medium">
+          <div  onClick={handleMobileNav} className=" absolute h-screen w-screen text-white bg-black z-[4000] top-0 bottom-0 flex flex-col">
+            <button className="absolute text-white font-medium top-0 right-0 p-2 m-3 h-fit w-fit">Close</button>
+            <div className="relative flex left-0 top-0 flex-col px-5 pt-10 text-3xl gap-8 font-medium">
               <Link href="/about">
                 About
               </Link>
@@ -113,6 +113,9 @@ function Navbar() {
                 Blogs
               </Link>
             </div>
+            <Link className={`mt-auto mb-10 border border-white justify-center mx-5 text-base font-medium py-2 flex items-center `} href="/contact">
+              Let&apos;s Talk
+            </Link>
           </div>
         }
       </nav>
