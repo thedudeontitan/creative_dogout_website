@@ -60,7 +60,7 @@ export default function Home() {
       </div>
       <div className="bg-black">
         <div className="text-white flex px-5 flex-col border-x mx-2 border-white min-h-screen lg:pr-10">
-          <div className="lg:ml-96 flex flex-col mb-24">
+          <div className="xl:ml-96 flex flex-col mb-24">
             <div className="lg:mt-20 mt-10 lg:mb-24 mb-10">
               <Reveal>
                 <span className="text-[28px] font-medium lg:text-5xl">Our expertise includes:</span>
@@ -84,7 +84,7 @@ export default function Home() {
       </div>
       <div className="bg-black">
         <div className="text-white flex flex-col px-5 border-x border-t mx-2 border-white min-h-screen lg:pr-10">
-          <div className="lg:ml-96 flex flex-col mb-24">
+          <div className="xl:ml-96 flex flex-col mb-24">
             <div className="lg:mt-20 mt-10 mb-10 lg:mb-40">
               <Reveal>
                 <span className="text-[28px] lg:text-5xl font-medium">
@@ -92,7 +92,7 @@ export default function Home() {
                 </span>
               </Reveal>
             </div>
-            <div className="flex flex-col lg:flex-row gap-5">
+            <div className="flex flex-col items-center xl:justify-normal xl:flex-row gap-5">
               {lever.map((data) => (
                 <div key={data.key}>
                   <Reveal>
@@ -110,8 +110,8 @@ export default function Home() {
         </div>
       </div>
       <div className="flex flex-col px-5 border-x border-t mx-2 text-white border-white min-h-screen pr-10 pb-20">
-        <span className="mt-20 text-[28px] lg:text-5xl font-medium lg:ml-96">Our clients vouch for us.</span>
-        <div className="overflow-hidden lg:ml-96">
+        <span className="mt-20 text-[28px] lg:text-5xl font-medium xl:ml-96">Our clients vouch for us.</span>
+        <div className="overflow-hidden xl:ml-96">
           <div className="mt-10 lg:mt-20 text-xl lg:text-2xl gap-6 flex">
             <div>{currentIndex + 1} - {testimony_data.length}</div>
             <button onClick={handlePrev} className="hover:scale-125 transition-all duration-500"><FiArrowLeft /> </button>
@@ -151,7 +151,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col px-5 border-x text-white border-t mx-2 border-white pr-10 pb-20 lg:pl-96">
+      <div className="flex flex-col px-5 border-x text-white border-t mx-2 border-white pr-10 pb-20 xl:pl-96">
 
         <div className="mt-20 flex flex-col text-[27px] lg:text-5xl font-medium">
           <span>We are born to disrupt,</span>
@@ -163,7 +163,7 @@ export default function Home() {
           <span className="mt-10">Rest assured your customers won’t reach your competitors.</span>
         </div>
       </div>
-      <div className="flex flex-col px-5 border-x text-white border-t mx-2 border-white pr-10 pb-20 lg:pl-96">
+      <div className="flex flex-col px-5 border-x text-white border-t mx-2 border-white pr-10 pb-20 xl:pl-96">
 
         <span className="mt-20 text-3xl lg:text-5xl font-medium">Let’s grow together!</span>
 
