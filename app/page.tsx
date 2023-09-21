@@ -139,7 +139,7 @@ export default function Home() {
             ))}
           </div>
           <button
-            className={`pt-2 w-fit mr-12 border-t border-purple-500`}
+            className={`pt-2 w-fit mr-12 border-t border-purple-500 flex lg:hidden`}
             onClick={() => (setCurrentIndex(testimony_data[currentIndex].key - 1), console.log(currentIndex))}
           >
             <div className="flex flex-col text-lg lg:text-2xl items-start">
