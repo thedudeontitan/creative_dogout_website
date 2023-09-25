@@ -2,6 +2,8 @@ interface blog {
     key: number;
     title: string;
     content: string;
+    highlight: string;
+    image: string;
 }
 
 export const blogs: blog[] = [
@@ -30,7 +32,9 @@ export const blogs: blog[] = [
         The content that you post on all these platforms is detrimental to your brand’s character. It’s important to use language that matches the brand’s nature while also being emotive and connective. The plethora of social media platforms offer so many innovative ideas to advertise your products in countless different ways that will help spread the brand's message to a wider audience. 
         
         Apart from all this, it is crucial for every brand to track their performance and get a sense of how people interact with you simultaneously giving you the opportunity to implement changes to the brand as and when required. Thus, brand purpose and differentiation are the embodiment of what your company is and does. A solid brand identity can inspire customers and is pivotal in deciding the brand's prospects.  
-        `
+        `,
+        highlight:"With over billions of businesses trying to stand apart from their competitors, understanding what a successful brand identity is an edge that you need to be ahead of your competition.",
+        image:"/blog 1.jpg"
     },
     {
         key: 2,
@@ -52,7 +56,9 @@ export const blogs: blog[] = [
         All brands that work with the flow understand that the evolution of brand culture lies in the shift in strategy. It involves interactions that will evolve into strong intimate relationships with each consumer. All great brands embrace a policy that lets them evolve with changing trends and also makes sure that the company’s core values and message remains uncompromised while maintaining consumer expectations. 
         
         Every brand is different and should opt for a brand strategy that works for it to make a self–actualized culture in the future. With this, businesses will have the power to truly define and unlock their full potential creating a purer brand expression with the customer. This will be instrumental in entering a cooperative world and leaving behind the competitive environment.  
-        `
+        `,
+        highlight:"It’s common for companies to adjust themselves according to changing trends and customer values but it’s important to take a look back at past brand strategies in order to develop a thorough future branding strategy.",
+        image:"/blog 2.jpg"
     },
     {
         key: 3,
@@ -84,6 +90,8 @@ export const blogs: blog[] = [
         Apart from all these major trust signals, brands can always display their achievements and endorsements which include their listed partners, or media coverage or accreditation badges to facilitate building a positive brand outlook. 
         
         Trust signals are a powerful way to ease your communication with users and also increase conversion rates. At the same time, it is important for all brands to note that using trust signals will only be successful when you deliver the best customer service, follow ethical business practices, work for a cause and most importantly deliver excellent services and products at the best possible price.     
-        `
+        `,
+        highlight:"Trust. It is the foundation of all relationships including all commercial transactions that millions of people make every day.",
+        image:"/blog 3.jpg"
     },
 ]
