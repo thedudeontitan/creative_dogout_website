@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import Spline from "@splinetool/react-spline";
 import { Reveal } from "./(components)/Reveal";
 import { useState } from "react";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi"
@@ -59,18 +58,18 @@ export default function Home() {
         </div>
       </div>
       <div className="bg-black">
-        <div className="text-white flex px-5 flex-col border-x mx-2 border-white min-h-screen lg:pr-10">
+        <div className="text-white flex px-5 flex-col border-x mx-2 border-white lg:pr-10">
           <div className="xl:ml-96 flex flex-col mb-24">
             <div className="lg:mt-20 mt-10 lg:mb-24 mb-10">
               <Reveal>
                 <span className="text-[28px] font-medium lg:text-5xl">Our expertise includes:</span>
               </Reveal>
             </div>
-            <div className="grid lg:grid-cols-2 gap-y-16 lg:gap-y-20">
+            <div className="grid lg:grid-cols-2 gap-y-4 lg:gap-y-10">
               {expertise_data.map((data) => (
                 <div key={data.key}>
                   <Reveal>
-                    <div className="border-t w-[48vh] lg:w-[60vh] flex">
+                    <div className="border-t w-[38vh] lg:w-[60vh] flex">
                       <span className="my-auto mt-4 text-xl lg:text-2xl ">
                         {data.title}
                       </span>
@@ -83,7 +82,7 @@ export default function Home() {
         </div>
       </div>
       <div className="bg-black">
-        <div className="text-white flex flex-col px-5 border-x border-t mx-2 border-white min-h-screen lg:pr-10">
+        <div className="text-white flex flex-col px-5 border-x border-t mx-2 border-white lg:pr-10">
           <div className="xl:ml-96 flex flex-col mb-24">
             <div className="lg:mt-20 mt-10 mb-10 lg:mb-40">
               <Reveal>
@@ -118,7 +117,7 @@ export default function Home() {
             <button onClick={handleNext} className="hover:scale-125 transition-all duration-500"><FiArrowRight /></button>
           </div>
           <div
-            className={`mt-10 mb-10 lg:h-80 text-xl lg:text-2xl lg:text-[37px] lg:leading-10  font-medium mr-10 transform translate-x-0 opacity-0 transition-all duration-700 ease-out ${transitioning ? 'translate-x-[250%] opacity-0' : 'translate-x-0 opacity-100'
+            className={`mt-10 mb-10 lg:h-48 text-lg lg:text-xl lg:text-[37px] lg:leading-10  font-medium mr-10 transform translate-x-0 opacity-0 transition-all duration-700 ease-out ${transitioning ? 'translate-x-[250%] opacity-0' : 'translate-x-0 opacity-100'
               }`}
           >
             <p>&quot;{testimony_data[currentIndex] && testimony_data[currentIndex].comment}&quot;</p>
@@ -130,7 +129,7 @@ export default function Home() {
                 className={`pt-2 w-fit mr-12 ${index === currentIndex ? 'active border-t border-purple-500' : ''}`}
                 onClick={() => (setCurrentIndex(data.key - 1), console.log(currentIndex))}
               >
-                <div className="flex flex-col text-lg lg:text-2xl items-start">
+                <div className="flex flex-col text-lg lg:text-xl items-start">
                   <span className="font-medium ">{data.name}</span>
                   <span className="">{data.role}</span>
                   <span>{data.company}</span>
