@@ -1,36 +1,47 @@
+"use client"
+import Spline from "@splinetool/react-spline";
+import Image from "next/image";
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 
 function page() {
   return (
-    <section className="bg-white">
-      <div className="flex flex-col border-x mx-2 border-black min-h-screen ">
-        <div className="mx-auto flex flex-col w-full">
-          <div className="flex flex-col lg:mt-60 mb-10">
-            <span className="lg:ml-96 mt-32 lg:mt-20 text-3xl lg:text-5xl font-medium lg:pr-10 px-2 lg:px-0">
-              Building progressive brands
-            </span>
-            <div className=" border-b border-black mt-10 lg:mt-6 mb-10 " />
-            <span className="lg:ml-96 text-xl lg:text-2xl lg:font-medium lg:pr-10 px-2 lg:px-0">
-              We deliver end-to-end capabilities to ambitious brands. Over the
-              years, we’ve entered a burgeoning space of deep tech where
-              traditional methodologies have become obsolete. Through creative
-              brand acceleration, we help businesses grow purposefully,
-              sustainably, and profitably. Powered by creative and analytical
-              ability, our interdisciplinary team delivers unearth results for
-              new-age customers.
-            </span>
-            <span className="lg:ml-96 text-xl lg:text-2xl lg:font-medium lg:mt-10 lg:pr-10 px-2 lg:px-0">
+    <section className="">
+      <div className="text-white flex flex-col border-x mx-2 border-white h-screen">
+        <Spline
+          className="h-screen top-0 right-0 left-0 absolute -z-10 "
+          scene="https://prod.spline.design/6H2CQkKjdHvOHr4W/scene.splinecode"
+        />
+        <div className="flex flex-col w-full">
+          <div className="items-start text-left flex flex-col lg:mt-60 lg:ml-40 mb-10">
+            <div className=" border-b border-white pb-5">
+              <span className=" text-3xl lg:text-5xl mb-10 font-medium lg:pr-10 px-2 lg:px-0">
+                Building progressive brands
+              </span>
+            </div>
+            {/* <div className=" border-t border-white w-[120vh]"/> */}
+            <div className="w-[120vh] mt-10">
+              <span className="text-xl lg:text-2xl lg:font-medium lg:pr-10 px-2 lg:px-0">
+                {/* We offer end-to-end capabilities to ambitious brands in the dynamic space of deep tech. Through creative brand acceleration, we drive purposeful, sustainable, and profitable growth, transcending traditional methodologies. Our interdisciplinary team, powered by creative and analytical ability, delivers exceptional results for new-age customers. Whether it's delivering business value or stimulating growth, we combine creativity, innovation, and technology to provide the results you need. */}
+
+                We offer end-to-end services for ambitious brands in deep tech, driving purposeful and sustainable growth through creative brand acceleration. Our interdisciplinary team combines creativity, analytics, and technology to deliver exceptional results for modern customers.
+              </span>
+              {/* <img src="brand.svg" alt="" className="w-80" /> */}
+            </div>
+            {/* <span className="text-xl lg:text-2xl lg:font-medium lg:mt-10 lg:pr-10 px-2 lg:px-0">
               Whether it is about delivering business value or stimulating
               growth, unlock the power of creativity, innovation and technology
               with brave new shots. We are always at your disposal to deliver
               the results you need.
-            </span>
+            </span> */}
+
           </div>
         </div>
       </div>
-      <div className="bg-purple-950 h-[80vh]"></div>
-      <div className="flex border-x mx-2 border-black min-h-screen pb-20 border-b ">
+      <div className="h-[80vh] relative">
+      <Image src="/image7.jpg" alt="" fill style={{objectFit:"cover"}}/>
+      </div>
+      <div className="flex border-x mx-2 border-black min-h-screen pb-20 border-b bg-white">
         <div className="lg:ml-96 flex flex-col w-full p-5">
           <span className="my-20 text-2xl lg:text-5xl font-medium lg:pr-10 px-2 lg:px-0 w-full">
             Brands require new perspectives, capabilities and tools if they want
@@ -94,9 +105,9 @@ function page() {
           </div>
         </div>
       </div>
-      <div className="flex border-x mx-2 border-black border-b ">
-        <div className="flex flex-col my-20 lg:ml-96 p-5">
-          <span className="mb-5 lg:mb-20 text-2xl lg:text-5xl font-medium lg:pr-10 lg:px-0 w-full"> Begin Your Journey to growth.</span>
+      <div className="flex border-x mx-2 border-black border-b bg-white">
+        <div className="flex flex-col items-center my-20 mx-auto">
+          <span className="mb-5 lg:mb-20 text-2xl lg:text-5xl font-medium lg:px-0 w-full"> Begin Your Journey to growth.</span>
           <button className="w-fit border border-black px-4 py-2 lg:text-xl hover:bg-black hover:text-white transition-all duration-500 hover:scale-105">Let&apos;s Talk</button>
         </div>
       </div>
