@@ -8,10 +8,10 @@ function Expertise() {
   return (
     <section className="">
       <div className="text-white flex flex-col border-x mx-2 border-white h-screen">
-        {window == undefined ? "" : <Spline
+        {typeof window !== 'undefined' ? <Spline
           className="h-screen top-0 right-0 left-0 absolute -z-10 "
           scene={`${window.innerWidth >= 1024 ? "https://prod.spline.design/6H2CQkKjdHvOHr4W/scene.splinecode" : "https://prod.spline.design/WocMe8MnFcqtXtL6/scene.splinecode"}`}
-        />}
+        />: ""}
         <div className="flex flex-col w-full h-full z-10">
           <div className=" items-start text-left flex flex-col lg:mt-60 mt-60 lg:ml-40 mb-10">
             <div className=" border-b border-white pb-5">
