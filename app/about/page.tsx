@@ -6,74 +6,15 @@ import { BsArrowRight } from "react-icons/bs";
 import Spline from "@splinetool/react-spline";
 
 
-// const team_info = [
-//   {
-//     key: "1",
-//     name: "John Doe",
-//     position: "Position",
-//     image: "/pfp.png",
-//     linkedin: "https://www.linkedin.com/in/ankit-kokane-795162197/",
-//   },
-//   {
-//     key: "2",
-//     name: "John Doe",
-//     position: "position",
-//     image: "/pfp.png",
-//     linkedin: "https://www.linkedin.com/in/ankit-kokane-795162197/",
-//   },
-//   {
-//     key: "3",
-//     name: "John Doe",
-//     position: "position",
-//     image: "/pfp.png",
-//     linkedin: "https://www.linkedin.com/in/ankit-kokane-795162197/",
-//   },
-//   {
-//     key: "4",
-//     name: "John Doe",
-//     position: "position",
-//     image: "/pfp.png",
-//     linkedin: "https://www.linkedin.com/in/ankit-kokane-795162197/",
-//   },
-//   {
-//     key: "5",
-//     name: "John Doe",
-//     position: "position",
-//     image: "/pfp.png",
-//     linkedin: "https://www.linkedin.com/in/ankit-kokane-795162197/",
-//   },
-//   {
-//     key: "6",
-//     name: "John Doe",
-//     position: "position",
-//     image: "/pfp.png",
-//     linkedin: "https://www.linkedin.com/in/ankit-kokane-795162197/",
-//   },
-//   {
-//     key: "7",
-//     name: "John Doe",
-//     position: "position",
-//     image: "/pfp.png",
-//     linkedin: "https://www.linkedin.com/in/ankit-kokane-795162197/",
-//   },
-//   {
-//     key: "8",
-//     name: "John Doe",
-//     position: "position",
-//     image: "/pfp.png",
-//     linkedin: "https://www.linkedin.com/in/ankit-kokane-795162197/",
-//   },
-// ];
-
 function page() {
   return (
     <section className="">
-      <div className="min-h-screen bg-black bg-opacity-70">
+      <div className="min-h-screen">
 
         <div className="bg-white h-screen  absolute -z-20"></div>
         <Spline
           className="h-screen top-0 right-0 left-0 absolute -z-10 "
-          scene="https://prod.spline.design/vjAihqhjYhiHDc6X/scene.splinecode"
+          scene="https://prod.spline.design/BAjeAii0b6tenOOI/scene.splinecode"
         />
         <div className="border-x mx-2 px-5 border-white text-white">
           <div className="mx-auto flex flex-col h-screen justify-center w-full">
@@ -95,24 +36,25 @@ function page() {
           </div>
         </div>
       </div>
-      <div className="bg-purple-950 h-[80vh]"></div>
+
+
       <div className="bg-white lg:min-h-screen">
         <div className=" flex flex-col border mx-2 px-5 border-black gap-y-8 lg:pr-10 lg:px-0 pb-20">
           <span className="text-xl lg:text-4xl lg:ml-96 font-medium mt-10 lg:mt-20 lg:mb-10">
             Building through Purpose driven Communications.
           </span>
-          <span className="lg:text-3xl lg:ml-96 font-medium">
+          <span className="lg:text-2xl lg:ml-96 font-medium">
             A B2B growth partner for several agencies and a stimulator for brands.
             We build, promote and protect businesses to rise above challenges -
             unlock growth potential.
           </span>
-          <span className="lg:text-3xl lg:ml-96 font-medium">
+          <span className="lg:text-2xl lg:ml-96 font-medium">
             Creative Dugout started as a Media Content Agency that gradually
             evolved into a brand communications company with bold initiatives.
             Driven by perseverance, we instill confidence in our clients to power
             disruption.
           </span>
-          <span className="lg:text-3xl lg:ml-96 font-medium">
+          <span className="lg:text-2xl lg:ml-96 font-medium">
             Creative Dugout is deeply rooted in multidimensional research and the
             methodology of delivering excellence in brand experience. Our
             interdisciplinary team delivers inspiration for ambitious brands to
@@ -129,44 +71,26 @@ function page() {
           </button>
         </div>
       </div>
-      <div className="bg-purple-950 h-[80vh]"></div>
-      <div className="flex flex-col border-x mx-2 border-black gap-y-8 px-5">
-        <span className="text-xl lg:text-3xl font-medium mt-10 lg:mt-20 lg:ml-96 lg:pr-10 px-2 lg:px-0">
-          At Creative Dugout, our work principles act as a layer of protection
-          for our clients.
-        </span>
-        <span className="lg:text-2xl lg:ml-96 lg:pr-10 px-2 lg:px-0">
-          We deeply respect and care about our people and clients. We are
-          committed to growth, retention, honesty and fair dealing. We align our
-          expertise with stakeholders’ interests. We are dedicated to building
-          long-term rewarding relationships with clients.
-        </span>
-        <div className="border-b border-black lg:mt-6 lg:mb-20 -mx-5" />
-      </div>
-      {/* <div className="flex flex-col border-x mx-2 border-black min-h-screen gap-y-8 lg:pr-10 px-2 lg:px-0">
-        <span className="lg:text-4xl lg:ml-96 mt-20">Our People.</span>
-        <span className="lg:text-2xl lg:ml-96">
-          We have some curious, creative thinkers and problem solvers to
-          cultivate your brand growth. Expect true commitment at every step .
-        </span>
-        <div className="lg:ml-96 mt-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-            {team_info.map((info) => (
-              <Link
-                href={info.linkedin}
-                className="flex flex-row"
-                key={info.key}
-              >
-                <Image src={info.image} alt="" width={80} height={10} />
-                <div className="flex flex-col px-5">
-                  <span className="text-2xl text-gray-600">{info.name}</span>
-                  <span className="text-xl text-gray-600">{info.position}</span>
-                </div>
-              </Link>
-            ))}
-          </div>
+      <div className="relative">
+        <div className="h-[80vh] w-full relative ">
+          <Image src="/image4.jpg" alt="" fill style={{ objectFit: "cover" }} />
         </div>
-      </div> */}
+        <div className="absolute top-0 left-0 h-full z-10 flex flex-col text-white border-x mx-2 border-white gap-y-8 px-5">
+          <span className="text-xl lg:text-3xl font-medium mt-10 lg:mt-52 lg:ml-96 lg:pr-10 px-2 lg:px-0">
+            At Creative Dugout, our work principles act as a layer of protection
+            for our clients.
+          </span>
+          <span className="lg:text-2xl lg:ml-96 lg:pr-10 px-2 lg:px-0">
+            We deeply respect and care about our people and clients. We are
+            committed to growth, retention, honesty and fair dealing. We align our
+            expertise with stakeholders’ interests. We are dedicated to building
+            long-term rewarding relationships with clients.
+          </span>
+          <div className="border-b border-white lg:mt-6 lg:mb-20 -mx-5" />
+        </div>
+        <div className="absolute top-0 left-0 h-full w-full bg-black opacity-60"></div>
+
+      </div>
     </section>
   );
 }
