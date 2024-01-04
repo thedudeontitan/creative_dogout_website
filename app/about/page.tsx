@@ -6,7 +6,7 @@ import { BsArrowRight } from "react-icons/bs";
 import Spline from "@splinetool/react-spline";
 
 
-function page() {
+function About() {
   return (
     <section className="">
       <div className="min-h-screen">
@@ -95,4 +95,4 @@ function page() {
   );
 }
 
-export default page;
+export default About;

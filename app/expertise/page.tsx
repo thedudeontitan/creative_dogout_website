@@ -4,7 +4,7 @@ import Image from "next/image";
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 
-function page() {
+function Expertise() {
   return (
     <section className="">
       <div className="text-white flex flex-col border-x mx-2 border-white h-screen">
@@ -115,4 +115,4 @@ function page() {
   );
 }
 
-export default page;
+export default Expertise;

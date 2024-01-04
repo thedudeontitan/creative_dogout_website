@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-function page() {
+function Contact() {
   return (
     <section className="bg-white">
       <div className="p-5 lg:p-0 flex flex-col lg:flex-row border-x mx-2 min-h-screen border-black pr-10">
@@ -61,6 +61,5 @@ function page() {
   );
 }
 
-export default page;
+export default Contact;
 
-// dp and tree, dp on .. , learn how to explain problems, how to create edge cases,
