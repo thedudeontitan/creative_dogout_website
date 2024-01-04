@@ -47,41 +47,41 @@ function Navbar() {
       <nav
         className={`hidden z-30 lg:flex flex-row top-0 right-0 left-0  fixed w-full transition-all duration-500 
         ${isScrolled ? "transform -translate-y-0" : "transform -translate-y-full"}
-        ${(scrollInit != 0) ? (path == "/" || path == "/brandcommunication" || path == "/blogs") ? "bg-black text-white" : "bg-white text-black" : (path == "/" || path == "/brandcommunication" || path == "/blogs") ? "bg-transparent text-white" : "bg-transparent text-black"}
+        ${(scrollInit != 0) ? (path == "/" || path == "/brandcommunication" || path == "/blogs"|| path == "/about"|| path == "/expertise") ? "bg-black text-white" : "bg-white text-black" : (path == "/" || path == "/brandcommunication" || path == "/blogs"|| path == "/about"|| path == "/expertise") ? "bg-transparent text-white" : "bg-transparent text-black"}
         `}
       >
         <div className="flex flex-row my-5 mx-auto gap-x-14">
           <Link
             href="/about"
-            className={`border-b-2 border-transparent  transition-all duration-500 ${(path == "/" || path == "/brandcommunication" || path == "/blogs") ? "hover:border-white" : "hover:border-black"}`}
+            className={`border-b-2 border-transparent  transition-all duration-500 ${(path == "/" || path == "/brandcommunication" || path == "/blogs"|| path == "/about"|| path == "/expertise") ? "hover:border-white" : "hover:border-black"}`}
           >
             <div className="">About</div>
           </Link>
           <Link
             href="/expertise"
-            className={`border-b-2 border-transparent  transition-all duration-500 ${(path == "/" || path == "/brandcommunication" || path == "/blogs") ? "hover:border-white" : "hover:border-black"}`}
+            className={`border-b-2 border-transparent  transition-all duration-500 ${(path == "/" || path == "/brandcommunication" || path == "/blogs"|| path == "/about"|| path == "/expertise") ? "hover:border-white" : "hover:border-black"}`}
           >
             <div className="">Expertise</div>
           </Link>
           <Link
             href="/brandcommunication"
-            className={`border-b-2 border-transparent  transition-all duration-500 ${(path == "/" || path == "/brandcommunication" || path == "/blogs") ? "hover:border-white" : "hover:border-black"}`}
+            className={`border-b-2 border-transparent  transition-all duration-500 ${(path == "/" || path == "/brandcommunication" || path == "/blogs"|| path == "/about"|| path == "/expertise") ? "hover:border-white" : "hover:border-black"}`}
           >
             <div className="">Brand Communication</div>
           </Link>
           <Link
             href="/blogs"
-            className={`border-b-2 border-transparent  transition-all duration-500 ${(path == "/" || path == "/brandcommunication" || path == "/blogs") ? "hover:border-white" : "hover:border-black"}`}
+            className={`border-b-2 border-transparent  transition-all duration-500 ${(path == "/" || path == "/brandcommunication" || path == "/blogs"|| path == "/about"|| path == "/expertise") ? "hover:border-white" : "hover:border-black"}`}
           >
             <div className="">Blogs</div>
           </Link>
         </div>
-        <Link className={` text-base font-medium px-2 py-1  mr-5 my-3 flex items-center ${(path == "/" || path == "/brandcommunication" || path == "/blogs") ? "border-white border text-white" : "border-black border text-black"}`} href="/contact">
+        <Link className={` text-base font-medium px-2 py-1  mr-5 my-3 flex items-center ${(path == "/" || path == "/brandcommunication" || path == "/blogs"|| path == "/about"|| path == "/expertise") ? "border-white border text-white" : "border-black border text-black"}`} href="/contact">
           Let&apos;s Talk
         </Link>
       </nav>
 
-      <nav className={`z-30 fixed flex items-center lg:hidden w-screen ${(path == "/" || path == "/brandcommunication" || path == "/blogs") ? "bg-black text-white" : "bg-white text-black"}`}>
+      <nav className={`z-30 fixed flex items-center lg:hidden w-screen ${(path == "/" || path == "/brandcommunication" || path == "/blogs"|| path == "/about"|| path == "/expertise") ? "bg-black text-white" : "bg-white text-black"}`}>
         <div className={`transition-all overflow-clip w-20 h-8 flex items-center ml-4 ${scrollInit == 0 ? "hidden" : ""}`}>
           <div className="relative w-16 h-16 ">
             <Link href="/">
