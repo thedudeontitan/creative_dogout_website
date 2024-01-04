@@ -72,7 +72,7 @@ function About() {
         </div>
       </div>
       <div className="relative">
-        <div className="h-[80vh] w-full relative ">
+        <div className="lg:h-[80vh] h-[40vh] w-full relative ">
           <Image src="/image4.jpg" alt="" fill style={{ objectFit: "cover" }} />
         </div>
         <div className="absolute top-0 left-0 h-full z-10 flex flex-col text-white border-x mx-2 border-white gap-y-8 px-5">

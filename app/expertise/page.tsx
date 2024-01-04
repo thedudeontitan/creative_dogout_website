@@ -8,24 +8,27 @@ function Expertise() {
   return (
     <section className="">
       <div className="text-white flex flex-col border-x mx-2 border-white h-screen">
-        <Spline
+        {window == undefined ? "" : <Spline
           className="h-screen top-0 right-0 left-0 absolute -z-10 "
-          scene="https://prod.spline.design/6H2CQkKjdHvOHr4W/scene.splinecode"
-        />
-        <div className="flex flex-col w-full">
-          <div className="items-start text-left flex flex-col lg:mt-60 lg:ml-40 mb-10">
+          scene={`${window.innerWidth >= 1024 ? "https://prod.spline.design/6H2CQkKjdHvOHr4W/scene.splinecode" : "https://prod.spline.design/WocMe8MnFcqtXtL6/scene.splinecode"}`}
+        />}
+        <div className="flex flex-col w-full h-full z-10">
+          <div className=" items-start text-left flex flex-col lg:mt-60 mt-60 lg:ml-40 mb-10">
             <div className=" border-b border-white pb-5">
-              <span className=" text-3xl lg:text-5xl mb-10 font-medium lg:pr-10 px-2 lg:px-0">
-                Building progressive brands
-              </span>
+              <div className="lg:pr-10 px-2 lg:px-0">
+                <span className=" text-3xl lg:text-5xl mb-10 font-medium ">
+                  Building progressive brands
+                </span>
+              </div>
             </div>
-            {/* <div className=" border-t border-white w-[120vh]"/> */}
-            <div className="w-[120vh] mt-10">
-              <span className="text-xl lg:text-2xl lg:font-medium lg:pr-10 px-2 lg:px-0">
-                {/* We offer end-to-end capabilities to ambitious brands in the dynamic space of deep tech. Through creative brand acceleration, we drive purposeful, sustainable, and profitable growth, transcending traditional methodologies. Our interdisciplinary team, powered by creative and analytical ability, delivers exceptional results for new-age customers. Whether it's delivering business value or stimulating growth, we combine creativity, innovation, and technology to provide the results you need. */}
+            <div className="lg:max-w-[120vh] mt-10">
+              <div className="lg:pr-10 px-2 lg:px-0">
+                <span className="text-xl lg:text-2xl lg:font-medium">
+                  {/* We offer end-to-end capabilities to ambitious brands in the dynamic space of deep tech. Through creative brand acceleration, we drive purposeful, sustainable, and profitable growth, transcending traditional methodologies. Our interdisciplinary team, powered by creative and analytical ability, delivers exceptional results for new-age customers. Whether it's delivering business value or stimulating growth, we combine creativity, innovation, and technology to provide the results you need. */}
+                  We offer end-to-end services for ambitious brands in deep tech, driving purposeful and sustainable growth through creative brand acceleration. Our interdisciplinary team combines creativity, analytics, and technology to deliver exceptional results for modern customers.
+                </span>
+              </div>
 
-                We offer end-to-end services for ambitious brands in deep tech, driving purposeful and sustainable growth through creative brand acceleration. Our interdisciplinary team combines creativity, analytics, and technology to deliver exceptional results for modern customers.
-              </span>
               {/* <img src="brand.svg" alt="" className="w-80" /> */}
             </div>
             {/* <span className="text-xl lg:text-2xl lg:font-medium lg:mt-10 lg:pr-10 px-2 lg:px-0">
@@ -37,9 +40,10 @@ function Expertise() {
 
           </div>
         </div>
+        <div className="absolute lg:hidden top-0 left-0 h-full w-full bg-black opacity-60"></div>
       </div>
       <div className="h-[80vh] relative">
-      <Image src="/image7.jpg" alt="" fill style={{objectFit:"cover"}}/>
+        <Image src="/image7.jpg" alt="" fill style={{ objectFit: "cover" }} />
       </div>
       <div className="flex border-x mx-2 border-black min-h-screen pb-20 border-b bg-white">
         <div className="lg:ml-96 flex flex-col w-full p-5">
