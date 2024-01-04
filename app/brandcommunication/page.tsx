@@ -33,25 +33,46 @@ function BrandCommunication() {
                     </div>
                 </div>
             </div>
-            <div className="border-x mx-2 border-white min-h-screen text-white p-5">
-                <div className='mt-10 lg:mt-20 flex flex-col '>
-                    <span className='text-2xl lg:text-5xl font-medium lg:mb-10 xl:ml-96 lg:mr-20 lg:mt-20'>Who we are </span>
-                    <div className='border-t border-white -mx-5 my-5 lg:my-0'></div>
-                    <span className='text-lg lg:text-2xl lg:leading-10 xl:ml-96 lg:mr-40 lg:mt-20'>We are strategists and creators. Being an innovation-driven woman-led company, we are powered by eccentric ideas. Our strategists, creators, designers, and tech enthusiasts deliver visionary solutions by thoroughly interacting with briefs and blending their creative skillset and technological acumen to bring forth authentic and poignant strategies to every client challenge.</span>
-                    <span className='text-lg lg:text-2xl lg:leading-10 xl:ml-96 lg:mr-40 lg:mt-10'>Our campaigns do more than merely grab attention - they establish Thought Leadership and make every brand Influential. </span>
+
+                <div className="border-x mx-2 border-white min-h-screen text-white p-5 z-10">
+                    <div className='mt-10 lg:mt-20 flex flex-col '>
+                        <span className='text-2xl lg:text-5xl font-medium lg:mb-10 xl:ml-96 lg:mr-20 lg:mt-20'>Who we are </span>
+                        <div className='border-t border-white -mx-5 my-5 lg:my-0'></div>
+                        <span className='text-lg lg:text-2xl lg:leading-10 xl:ml-96 lg:mr-40 lg:mt-20'>We are strategists and creators. Being an innovation-driven woman-led company, we are powered by eccentric ideas. Our strategists, creators, designers, and tech enthusiasts deliver visionary solutions by thoroughly interacting with briefs and blending their creative skillset and technological acumen to bring forth authentic and poignant strategies to every client challenge.</span>
+                        <span className='text-lg lg:text-2xl lg:leading-10 xl:ml-96 lg:mr-40 lg:mt-10'>Our campaigns do more than merely grab attention - they establish Thought Leadership and make every brand Influential. </span>
+                    </div>
                 </div>
-            </div>
-            <div className='h-[60vh] w-full bg-purple-300'></div>
-            <div className="border-x mx-2 border-white min-h-screen text-white pb-10 lg:pb-20 p-5">
-                <div className='mt-10 lg:mt-20 flex flex-col '>
-                    <span className='text-2xl lg:text-5xl font-medium lg:mb-10 xl:ml-96 lg:mr-20 lg:mt-20'>Moving brands across geographical boundaries</span>
+
+            {/* <div className='h-[70vh] relative flex items-center'>
+                <div className='border-l border-white h-full mx-2 z-10'></div>
+                <div className='flex-grow'>
+                    <Image src="/image9.jpg" alt='' fill style={{ objectFit: "cover", width: '100%', height: '100%' }} />
+                </div>
+                <div className='border-r border-white h-full mx-2 z-10'></div>
+            </div> */}
+            <div className='relative h-screen'>
+                <div className='relative h-screen '>
+                    <Image src="/image9.jpg" alt='' fill style={{ objectFit: "cover", width: '100%', height: '100%' }} />
+                </div>
+            <div className="absolute z-10 top-0 border-x mx-2 border-white min-h-screen text-white pb-10 p-5">
+                <div className='mt-10 lg:mt-10 flex flex-col '>
+                    <span className='text-2xl lg:text-5xl font-medium lg:mb-10 xl:ml-96 lg:mr-20 lg:mt-10'>Moving brands across geographical boundaries</span>
                     <div className='border-t border-white -mx-5 my-5 lg:my-0'></div>
-                    <span className='text-lg lg:text-2xl lg:leading-10 xl:ml-96 lg:mr-40 lg:mt-20'>Ever since our country has witnessed unprecedented technological growth, upcoming brands have been tapping into technological opportunities. We specialize in offering personalized solutions catered to tech startups and forward-moving companies to unlock go-to-market and growth potential, primed to provide both local visibility and global reach. </span>
+                    <span className='text-lg lg:text-2xl lg:leading-10 xl:ml-96 lg:mr-40 lg:mt-10'>Ever since our country has witnessed unprecedented technological growth, upcoming brands have been tapping into technological opportunities. We specialize in offering personalized solutions catered to tech startups and forward-moving companies to unlock go-to-market and growth potential, primed to provide both local visibility and global reach. </span>
                     <span className='text-lg lg:text-2xl lg:leading-10 xl:ml-96 lg:mr-40 lg:mt-10'>Embracing our role as a growth accelerator for brands, we work towards pushing budding brands into leadership positions and actively integrating unique go-to-market and brand strategies. Our highly connected network brings a new level of brilliance to all assignments creating brands and leaders of tomorrow.</span>
                 </div>
             </div>
-            <div className='h-[60vh] w-full bg-purple-300'></div>
+        <div className="absolute top-0 left-0 h-full w-full bg-black opacity-30"></div>
 
+            </div>
+
+            {/* <div className='h-[70vh] relative flex items-center'>
+                <div className='border-l border-white h-full mx-2 z-10'></div>
+                <div className='flex-grow'>
+                    <Image src="/image8.jpg" alt='' fill style={{ objectFit: "cover", width: '100%', height: '100%' }} />
+                </div>
+                <div className='border-r border-white h-full mx-2 z-10'></div>
+            </div> */}
             <div className="border-x mx-2 border-white lg:min-h-screen text-white p-5 pb-10 ">
                 <div className='mt-10 lg:mt-20 flex flex-col '>
                     <span className='text-2xl lg:text-5xl font-medium lg:mb-10 xl:ml-96 lg:mr-20 lg:mt-20'>Navigating a world full of possibilities </span>
