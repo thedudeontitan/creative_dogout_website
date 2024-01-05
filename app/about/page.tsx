@@ -38,7 +38,7 @@ function About() {
       </div>
 
 
-      <div className="bg-white lg:min-h-screen">
+      <div className="bg-white lg:min-h-screen text-black">
         <div className=" flex flex-col border mx-2 px-5 border-black gap-y-8 lg:pr-10 lg:px-0 pb-20">
           <span className="text-xl lg:text-4xl lg:ml-96 font-medium mt-10 lg:mt-20 lg:mb-10">
             Building through Purpose driven Communications.
@@ -72,7 +72,7 @@ function About() {
         </div>
       </div>
       <div className="relative">
-        <div className="lg:h-[80vh] h-[40vh] w-full relative ">
+        <div className="lg:h-[80vh] h-[60vh] w-full relative ">
           <Image src="/image4.jpg" alt="" fill style={{ objectFit: "cover" }} />
         </div>
         <div className="absolute top-0 left-0 h-full z-10 flex flex-col text-white border-x mx-2 border-white gap-y-8 px-5">

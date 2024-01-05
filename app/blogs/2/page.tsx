@@ -7,26 +7,26 @@ export default function Blog2() {
 
   const blog = blogs[1]
   return (
-    <div className=''>
+    <div className='bg-slate-100'>
       <div className='flex flex-col lg:flex-row py-20 '>
-        <div className='m-5 p-5 bg-white rounded w-full'>
-          <div className='relative h-[60vh] rounded'>
-            <Image src={blog.image} alt='' fill style={{ objectFit: "cover" }} />
+        <div className='m-5 lg:p-5 p-5 bg-white text-black rounded lg:w-full'>
+          <div className='relative lg:h-[60vh] h-[30vh] rounded'>
+            <Image src={blog.image} alt='' fill style={{ objectFit: "contain" }} />
           </div>
-          <div className='mr-20'>
-            <p className='mt-10 mb-5 font-semibold text-4xl'>
+          <div className='lg:mr-20'>
+            <p className='mt-10 mb-5 font-semibold lg:text-4xl text-lg'>
               {blog.title}
             </p>
-            <p className='mt-5 mb-5 font-medium text-xl'>
+            <p className='mt-5 mb-5 font-medium lg:text-xl'>
               {blog.highlight}
             </p>
-            <p className='text-lg'>
+            <p className='lg:text-lg'>
               {blog.content}
             </p>
           </div>
         </div>
 
-        <div className='w-[60vh] h-fit'>
+        <div className='lg:w-[60vh] h-fit'>
           <div className='m-5 p-5 bg-white rounded flex flex-col gap-5'>
             <div className='flex flex-row justify-center items-center'>
               <div className='border-t border-black w-full' />

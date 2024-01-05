@@ -29,7 +29,7 @@ export default function RootLayout({
           <div className="mb-12">
             <span>FOLLOW US</span>
           </div>
-          <div className="flex flex-col lg:flex-row ">
+          <div className="flex flex-col lg:flex-row text-black">
             <div className="flex flex-row">
               <div className="flex flex-row gap-x-2">
                 <Link

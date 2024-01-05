@@ -37,7 +37,7 @@ export default function Blogs() {
                     </div>
                 </div>
             </div>
-            <div className='relative min-h-screen pb-20 p-5'>
+            <div className='relative min-h-screen pb-20 p-5 bg-white text-black'>
                 {blogs.map((blog) => (
                     <div key={blog.key} className='lg:mt-20 xl:ml-96'>
                         <div className='lg:w-[150vh] lg:h-[60vh] my-10 overflow-clip flex items-center'>

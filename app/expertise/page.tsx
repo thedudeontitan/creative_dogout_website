@@ -45,7 +45,7 @@ function Expertise() {
       <div className="h-[80vh] relative">
         <Image src="/image7.jpg" alt="" fill style={{ objectFit: "cover" }} />
       </div>
-      <div className="flex border-x mx-2 border-black min-h-screen pb-20 border-b bg-white">
+      <div className="flex border-x mx-2 border-black text-black min-h-screen pb-20 border-b bg-white">
         <div className="lg:ml-96 flex flex-col w-full p-5">
           <span className="my-20 text-2xl lg:text-5xl font-medium lg:pr-10 px-2 lg:px-0 w-full">
             Brands require new perspectives, capabilities and tools if they want
@@ -109,7 +109,7 @@ function Expertise() {
           </div>
         </div>
       </div>
-      <div className="flex border-x mx-2 border-black border-b bg-white">
+      <div className="flex border-x mx-2 border-black border-b bg-white text-black">
         <div className="flex flex-col items-center my-20 mx-auto">
           <span className="mb-5 lg:mb-20 text-2xl lg:text-5xl font-medium lg:px-0 w-full"> Begin Your Journey to growth.</span>
           <button className="w-fit border border-black px-4 py-2 lg:text-xl hover:bg-black hover:text-white transition-all duration-500 hover:scale-105">Let&apos;s Talk</button>
